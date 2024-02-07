@@ -30,5 +30,6 @@
             @endforeach
         </tbody>
     </table>
+    <a href="{{ route('apiLeads') }}" target="_blank">Visualizar API dos Leads</a>
 @endsection
 

@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [DadosContatoController::class, 'view'])->name('leadsView');
+Route::get('/api-leads', [DadosContatoController::class, 'apiLeads'])->name('apiLeads');
+

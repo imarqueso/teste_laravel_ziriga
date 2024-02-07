@@ -21,4 +21,19 @@ class DadosContatoController extends Controller
 
         return view('index', compact('leads'));
     }
+
+    public function apiLeads()
+    {
+        $leads = DadosContato::select(
+            'leads.id',
+            'leads.nome',
+            'leads.whatsapp',
+            'leads.email',
+            'leads.cargo',
+            'leads.segmento',
+            'leads.interesse',
+        )->orderBy('leads.id', 'desc')->get();
+
+        return response()->json($leads);
+    }
 }
