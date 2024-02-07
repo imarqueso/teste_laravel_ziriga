@@ -7,6 +7,7 @@
     <table>
         <thead>
             <tr>
+                <th>Id</th>
                 <th>Nome</th>
                 <th>Whatsapp</th>
                 <th>E-mail</th>
@@ -16,14 +17,17 @@
             </tr>
         </thead>
         <tbody>
+            @foreach ($leads as $lead)
                 <tr>
-                    <td>Nome Teste</td>
-                    <td>Whatsapp Teste</td>
-                    <td>E-mail Teste</td>
-                    <td>Cargo Teste</td>
-                    <td>Segmento Teste</td>
-                    <td>Interesse Teste</td>
+                    <td>{{$lead->id}}</td>
+                    <td>{{$lead->nome}}</td>
+                    <td>{{$lead->whatsapp}}</td>
+                    <td>{{$lead->email}}</td>
+                    <td>{{$lead->cargo}}</td>
+                    <td>{{$lead->segmento}}</td>
+                    <td>{{$lead->interesse}}</td>
                 </tr>
+            @endforeach
         </tbody>
     </table>
 @endsection
