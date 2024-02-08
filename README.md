@@ -2,7 +2,7 @@
 
 ## Instalação
 
-Siga os passos abaixo para configurar e executar localmente o GestãoStock em seu ambiente:
+Siga os passos abaixo para configurar e executar localmente o projeto em seu ambiente:
 
 1. **Clone o repositório:**
 
